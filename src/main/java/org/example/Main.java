@@ -19,7 +19,17 @@ public class Main {
 
         System.out.println("distance()= " + point.distance());
 
-        //test
+        Player player1 = new Player("Arthur", 120, Weapon.SWORD);
+
+        System.out.println("Current Health: " + player1.healthRemaining());
+
+        player1.loseHealth(30);
+        System.out.println("After attack: " + player1.healthRemaining());
+
+        player1.restoreHealth(20);
+        System.out.println("After potion: " + player1.healthRemaining());
+
+        player1.loseHealth(200);
 
     }
 }
